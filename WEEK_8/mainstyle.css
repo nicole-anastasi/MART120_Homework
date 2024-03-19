@@ -1,0 +1,15 @@
+span{
+    background-color:cadetblue;
+}
+.redText{
+    color: rgb(77, 118, 131);
+}
+#linkModify{
+    text-decoration: none;
+    color:rgb(224, 155, 46);
+}
+body{
+    background-color: rgb(114, 169, 130);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
