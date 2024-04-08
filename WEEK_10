@@ -1,0 +1,8 @@
+var favoriteNumber=16;
+function setup() {
+    createCanvas(400, 400);
+}
+function draw() {
+    background (backgroundColor);
+    console.log(favoriteNumber);
+}
