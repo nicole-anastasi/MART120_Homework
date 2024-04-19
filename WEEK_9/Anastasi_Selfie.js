@@ -1,4 +1,7 @@
 
+var redColor = 123;
+var greenColor = 39;
+var blueColor = 21;
 
 function setup() {
     createCanvas(1000,1000);
@@ -8,7 +11,11 @@ function draw()
 
 {
 
-
+  background(redColor,greenColor,blueColor);
+  redColor++;
+  greenColor++;
+  blueColor++;
+  
 // hair
     strokeWeight(1);
   fill(140,120,92,255);

@@ -1,4 +1,7 @@
 
+var x = 100;
+var y = 200;
+var diameter = 50;
 
 function setup() {
     createCanvas(1000,1000);
@@ -25,11 +28,13 @@ function draw()
     fill(202,175,106,160);
     ellipse(445,395,105,50);
     ellipse(590,395,95,45);
+    x++;
 
     // eyeballs
     fill(128,68,17,180);
     circle(450,395,31);
     circle(585,395,28);
+    x++;
 
     // glasses
     fill(14,196,196,100);
