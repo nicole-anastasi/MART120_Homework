@@ -1,13 +1,39 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <title>page 3</title>
     <head> 
         <script>
             function getdata()
             {
-                var name = document.getElementById("name").value;
-                var Email = document.getElementById("phone").value;
-                window.alert("your info: " + name + Email);
+                var isvalid = true;
+
+                var name = document.getElementById("name");
+                var Email = document.getElementById("email");
+                var terms = document.getElementById("terms");
+
+                if (name.value===""){
+                    name.style.borderColor="red";
+                    name.focus();
+                    isValid=false;
+                }
+                if (email.value===""){
+                    name.style.borderColor="red";
+                    name.focus();
+                    isValid=false;
+                }
+                if(!terms.checked && isValid){
+                    terms.style.outlineColor="red";
+                    terms.focus();
+                    isValid=false;
+                }
+                if(isValid){
+                    window.alert("Form submityted successfully!.");
+                }
+                else{
+                    window.alert("Pease fill in all required fields.");
+                }
             }
+            
         </script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -15,8 +41,9 @@
      <body>
         <h3>If you want to get in touch with us at Chasm, share you contact information with us.  Just us!<br></h3>
         <form> 
-         <input type="text" value = " " id="name">name<br>
-         <input type="text" value = " " id="Email"><br><br>
+         <input type="text" value = " " id="name" required>name<br>
+         <input type="text" value = " " id="Email" required>email<br><br>
+         <input type="checkbox" id="terms" required>I agree to terms
         <button id="btnSubmit" class="btn btn-primary" onClick="getData();">Submit My Info</button>button></button>"
         </form>
         <br>

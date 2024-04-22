@@ -2,6 +2,7 @@
 var x = 100;
 var y = 200;
 var diameter = 50;
+var textSize = 36;
 
 function setup() {
     createCanvas(1000,1000);
@@ -26,26 +27,28 @@ function draw()
 
     //  eye sockets
     fill(202,175,106,160);
-    ellipse(445,395,105,50);
-    ellipse(590,395,95,45);
+    ellipse(x+345,395,105,50);
+    ellipse(x+490,395,95,45);
     x++;
 
     // eyeballs
     fill(128,68,17,180);
-    circle(450,395,31);
-    circle(585,395,28);
+    circle(x+350,395,31);
+    circle(x+485,395,28);
     x++;
 
     // glasses
     fill(14,196,196,100);
-    rect(385,350,110,90);
-    rect(535,350,110,90);
+    rect(385,y+150,110,90);
+    rect(535,y+150,110,90);
+    
 
     // mouth
     fill(225,158,160);
     ellipse(520,525,115,26);
     fill(117,73,73);
-    ellipse(520,525,75,16);
+    ellipse(520,y+325,75,16);
+  
 
     // pupils
     fill(0,0,0);
@@ -67,5 +70,6 @@ function draw()
 
     textSize(36);
     text('Nicole Anastasi', 400, 850);
+    textSize=textSize+1;
     
 }
