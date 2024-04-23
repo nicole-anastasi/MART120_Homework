@@ -1,6 +1,6 @@
 
 var x = 100;
-var y = 200;
+var y = 100;
 var diameter = 50;
 var textSize = 36;
 
@@ -27,8 +27,8 @@ function draw()
 
     //  eye sockets
     fill(202,175,106,160);
-    ellipse(x+345,395,105,50);
-    ellipse(x+490,395,95,45);
+    ellipse(x+345,395,x+5,50);
+    ellipse(x+490,395,x-1,45);
     x++;
 
     // eyeballs
@@ -39,8 +39,8 @@ function draw()
 
     // glasses
     fill(14,196,196,100);
-    rect(385,y+150,110,90);
-    rect(535,y+150,110,90);
+    rect(385,y+250,110,90);
+    rect(535,y+250,110,90);
     
 
     // mouth
