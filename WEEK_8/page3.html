@@ -3,12 +3,12 @@
     <title>page 3</title>
     <head> 
         <script>
-            function getdata()
+            function getData()
             {
-                var isvalid = true;
+                var isValid = true;
 
                 var name = document.getElementById("name");
-                var Email = document.getElementById("email");
+                var Email = document.getElementById("Email");
                 var terms = document.getElementById("terms");
 
                 if (name.value===""){
@@ -16,9 +16,9 @@
                     name.focus();
                     isValid=false;
                 }
-                if (email.value===""){
-                    name.style.borderColor="red";
-                    name.focus();
+                if (Email.value===""){
+                    Email.style.borderColor="red";
+                    Email.focus();
                     isValid=false;
                 }
                 if(!terms.checked && isValid){
@@ -41,8 +41,8 @@
      <body>
         <h3>If you want to get in touch with us at Chasm, share you contact information with us.  Just us!<br></h3>
         <form> 
-         <input type="text" value = " " id="name" required>name<br>
-         <input type="text" value = " " id="Email" required>email<br><br>
+         <input type="text" value = "" id="name" required>name<br>
+         <input type="text" value = "" id="Email" required>email<br><br>
          <input type="checkbox" id="terms" required>I agree to terms
         <button id="btnSubmit" class="btn btn-primary" onClick="getData();">Submit My Info</button>button></button>"
         </form>
