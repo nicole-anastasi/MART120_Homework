@@ -21,6 +21,8 @@ var mouseShapey;
 
 
 
+
+
 function setup()
 {
     createCanvas(1000,1000);
@@ -32,6 +34,8 @@ function setup()
 function draw()
 {   
  background(255);
+
+ //createBorders(10);
  
 
     //player
@@ -87,13 +91,26 @@ circle(mouseShapex, mouseShapey, 40);
 
 }
 
+function createCharacter (X, Y)
+{
+    characterX = x;
+    characterY = y;
+    console.log(characterX);
+}
+
+function drawCharcter()
+{
+    fill(157, 173, 12);
+    circle(characterX, characterY, 30);
+
+}
 function mouseClicked()
 {
     mouseShapex = mousex;
     mouseShapey = mousey;
 }
 
-    //player movement right and left
+    //player movement 
 function keyPressed()
 {
     if (key == 'd')
@@ -103,5 +120,13 @@ function keyPressed()
     else if (key == 'a')
     {
         px-=20;
+    }
+    else if (key == 'w')
+    {
+        py+=20;
+    }
+    else if (key =="x")
+    {
+        py-=20;
     }
 }
